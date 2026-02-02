@@ -1,7 +1,7 @@
 ### **Project Report: Spatiotemporal Generalization in Satellite-Derived River pH Modeling**
 
 **Objective**  
-To determine if a universal "Global" machine learning model can accurately predict river pH from Sentinel-2 satellite data across the entire Ganga basin, or if distinct hydro-optical regimes require a "Hybrid Zonal" approach.  
+To determine if a universal "Global" machine learning model can accurately predict river pH from [Sentinel-2 satellite data](https://developers.google.com/earth-engine/datasets/catalog/sentinel-2) across the entire Ganga basin, or if distinct hydro-optical regimes require a "Hybrid Zonal" approach.  
 **Executive Summary**  
 Our investigation demonstrates that a single, universal inversion algorithm fails to generalize across the full length of the river ($R^2 \\approx \-0.19$ on unseen locations). This confirms the presence of significant **Spatial Non-Stationarity**—meaning the relationship between water color and pH changes physically as the river flows from upstream to downstream.  
 Consequently, we developed a **Hybrid Zonal Model** that uses unsupervised clustering to identify these distinct optical regimes. This approach successfully raised predictive accuracy to **$R^2 \= 0.59$**, proving that while a "One-Size-Fits-All" model is impossible, a "Regime-Specific" approach is highly effective.
