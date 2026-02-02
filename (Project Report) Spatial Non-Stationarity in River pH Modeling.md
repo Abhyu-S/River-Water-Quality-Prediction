@@ -6,7 +6,7 @@ To determine if a universal "Global" machine learning model can accurately predi
 Our investigation demonstrates that a single, universal inversion algorithm fails to generalize across the full length of the river ($R^2 \\approx \-0.19$ on unseen locations). This confirms the presence of significant **Spatial Non-Stationarity**—meaning the relationship between water color and pH changes physically as the river flows from upstream to downstream.  
 Consequently, we developed a **Hybrid Zonal Model** that uses unsupervised clustering to identify these distinct optical regimes. This approach successfully raised predictive accuracy to **$R^2 \= 0.59$**, proving that while a "One-Size-Fits-All" model is impossible, a "Regime-Specific" approach is highly effective.
 
-### ---
+---
 
 **1\. Methodology & Forensic Analysis**
 
@@ -32,7 +32,7 @@ We conducted a three-stage ablation study to isolate the source of predictive po
 * **Result:** **$R^2 \\approx 0.40$**.  
 * **Interpretation:** 40% of the variance in pH is driven purely by seasonal flow and static industrial zones. Any valid satellite model must beat this "Memorization Baseline."
 
-### ---
+---
 
 **2\. The Solution: Hybrid Zonal Modeling**
 
@@ -45,7 +45,7 @@ Since Experiment B proved that water physics varies by location, we rejected the
   * The Hybrid Model outperformed the "Memorization Baseline" (0.40) by **\~0.19**.  
   * This confirms that the satellite data *is* contributing significant value, but only when constrained within the correct local optical context.
 
-### ---
+---
 
 **3\. Conclusion**
 
