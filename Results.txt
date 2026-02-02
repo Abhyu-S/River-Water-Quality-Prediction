@@ -1,0 +1,24 @@
+Initializing Production Hybrid Pipeline...
+--------------------------------------------------
+[1/5] Loading and Calculating Physics Indices...
+    > Base Data Shape: (612, 29)
+
+[2/5] Splitting Data (80/20)...
+    > Train: 489 | Test: 123
+
+[3/5] Building Pipeline...
+
+[4/5] Starting RandomizedSearchCV...
+Fitting 5 folds for each of 20 candidates, totalling 100 fits
+    > Best CV R² Score: 0.4601
+    > Best Params: {'xgb__subsample': 0.8, 'xgb__n_estimators': 1000, 'xgb__max_depth': 4, 'xgb__learning_rate': 0.01, 'xgb__colsample_bytree': 0.8}
+
+[5/5] Final Test Evaluation...
+--------------------------------------------------
+FINAL TEST RESULTS (Hybrid Production)
+--------------------------------------------------
+  > R² Score: 0.5934
+  > RMSE:     0.2019
+==================================================
+
+Saved robust pipeline to result_production_hybrid
